@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function ()
+    public function indexproduct()
     {
         $categories = Category::where('is_active', true)
             ->orderBy('name')
